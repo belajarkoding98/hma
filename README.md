@@ -13,6 +13,7 @@ pengalaman. Berkomitmen untuk membangun sistem sesuai kebermanfaatan.
     -   [Installation](#installation)
         -   [Usage](#usage)
         -   [To do API](#to-do-api)
+        -   [Thanks](#thanks)
 
 ## Features
 
@@ -78,6 +79,7 @@ Visit `http://localhost:8000` in your browser to access the web-based landing pa
 1. API Register, `http://localhost:8000/api/register`:
 
     ```bash
+    method : POST
     fullname : muhammad jahidin
     email : xxxxx@xxx.vcom
     password : qweqweqwe
@@ -87,6 +89,7 @@ Visit `http://localhost:8000` in your browser to access the web-based landing pa
 2. API Login, `http://localhost:8000/api/login`:
 
     ```bash
+    method : POST
     email : xxxxx@xxx.vcom
     password : qweqweqwe
     ```
@@ -107,4 +110,32 @@ Visit `http://localhost:8000` in your browser to access the web-based landing pa
 
     ```bash
     method : POST
+    fullname : muhammad jahidin
+    email : xxxxx@xxx.vcom
+    password : qweqweqwe
+    password_confirmation : qweqweqwe
     ```
+
+6. API Update Users, `http://localhost:8000/api/users/1`:
+
+    ```bash
+    method : PUT
+    fullname : muhammad jahidin
+    email : xxxxx@xxx.vcom
+    password : qweqweqwe
+    password_confirmation : qweqweqwe
+    ```
+
+7. API Delete Users, `http://localhost:8000/api/users/1`:
+
+    ```bash
+    method : DELETE
+    ```
+
+8. API Logout, `http://localhost:8000/api/logout`:
+
+    ```bash
+    method : POST
+    ```
+
+### Thanks
