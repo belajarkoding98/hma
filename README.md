@@ -12,7 +12,7 @@ pengalaman. Berkomitmen untuk membangun sistem sesuai kebermanfaatan.
     -   [Features](#features)
     -   [Installation](#installation)
         -   [Usage](#usage)
-        -   [To do](#to-do)
+        -   [To do API](#to-do-api)
 
 ## Features
 
@@ -73,6 +73,38 @@ pengalaman. Berkomitmen untuk membangun sistem sesuai kebermanfaatan.
 
 Visit `http://localhost:8000` in your browser to access the web-based landing page generator.
 
-### To do
+### To do API
 
-(soon)
+1. API Register, `http://localhost:8000/api/register`:
+
+    ```bash
+    fullname : muhammad jahidin
+    email : xxxxx@xxx.vcom
+    password : qweqweqwe
+    password_confirmation : qweqweqwe
+    ```
+
+2. API Login, `http://localhost:8000/api/login`:
+
+    ```bash
+    email : xxxxx@xxx.vcom
+    password : qweqweqwe
+    ```
+
+3. API Get All Users, `http://localhost:8000/api/users`:
+
+    ```bash
+    method : GET
+    ```
+
+4. API Get One Users, `http://localhost:8000/api/users/1`:
+
+    ```bash
+    method : GET
+    ```
+
+5. API Create Users, `http://localhost:8000/api/users`:
+
+    ```bash
+    method : POST
+    ```
