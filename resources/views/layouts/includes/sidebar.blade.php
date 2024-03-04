@@ -11,9 +11,14 @@
         </div>
     </div>
     <div class="sidebar-inner slimscrollleft">
-
         <div id="sidebar-menu">
             <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        {{ Auth::user()->user_fullname }}
+                    </a>
+                </li>
                 <li>
                     <a href="{{route('dashboard')}}" class="waves-effect">
                         <i class="dripicons-device-desktop"></i>

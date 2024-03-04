@@ -12,7 +12,7 @@
                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                     <!-- item-->
                     <div class="dropdown-item noti-title">
-                        <h5>Selamat Datang</h5>
+                        <h5>Selamat Datang {{ Auth::user()->user_fullname }}</h5>
                         <h5></h5>
                     </div>
                     <div class="dropdown-divider"></div>

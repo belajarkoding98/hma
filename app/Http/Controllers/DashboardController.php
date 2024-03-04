@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         //semua data pengguna
@@ -20,6 +25,7 @@ class DashboardController extends Controller
 
     public function logout(Request $request)
     {
+        User::where('user_id', Auth()->id())->update(['user_status' => 0]);
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
